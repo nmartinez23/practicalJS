@@ -1,3 +1,5 @@
+// todoList object is the Model in MVC
+
 var todoList = {
   todos: [],
   addTodo: function(todoText) {
@@ -39,6 +41,8 @@ var todoList = {
   }
 };
 
+// handlers object is the Controller in MVC
+
 var handlers = {
   addTodo: function() {
     var addTodoTextInput = document.getElementById('addTodoTextInput');
@@ -69,6 +73,8 @@ var handlers = {
     view.displayTodos();
   }  
 };
+
+// view object is the View in MVC
 
 var view = {
   displayTodos: function() {
